@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Custom.TextView.Header" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/mainTextColor</item>
+    </style>
+    <style name="Custom.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">15sp</item>
+        <item name="cardElevation">10dp</item>
+    </style>
+</resources>

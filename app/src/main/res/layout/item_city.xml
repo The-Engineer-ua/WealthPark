@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<androidx.cardview.widget.CardView
+    android:id="@+id/item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="@dimen/mainSpacing"
+    android:layout_marginVertical="@dimen/cardMarginTop"
+    android:clickable="true"
+    android:focusable="true"
+    style="@style/Custom.CardView">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgCover"
+            android:layout_width="@dimen/coverImageSize"
+            android:layout_height="@dimen/coverImageSize"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+            android:id="@+id/textCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/textDescription"
+            app:layout_constraintStart_toEndOf="@id/imgCover"
+            android:layout_marginStart="@dimen/mainHorizontalSpacing"
+            android:textColor="@color/mainTextColor"
+            android:textSize="20sp"
+            tools:text="Name"
+            android:maxLines="1"/>
+        <TextView
+            android:id="@+id/textDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/textCity"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgCover"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/mainHorizontalSpacing"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="15sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Some test description"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

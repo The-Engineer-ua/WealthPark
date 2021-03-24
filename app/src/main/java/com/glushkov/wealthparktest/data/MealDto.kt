@@ -1,3 +1,5 @@
 package com.glushkov.wealthparktest.data
 
-data class MealDto(val meal: String, val image: String)
+import java.io.Serializable
+
+data class MealDto(val name: String, val image: String) : Serializable

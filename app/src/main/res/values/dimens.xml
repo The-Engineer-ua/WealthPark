@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainHorizontalSpacing">25dp</dimen>
+    <dimen name="mainTopMargin">25dp</dimen>
+    <dimen name="mainSpacing">25dp</dimen>
+    <dimen name="cardMarginTop">10dp</dimen>
+
+    <dimen name="coverImageSize">100dp</dimen>
+
+    <dimen name="coverImageSizeLarge">230dp</dimen>
+</resources>
